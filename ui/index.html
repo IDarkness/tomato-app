@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <title>Tomato-App</title>
+</head>
+
+<body class="bg-transparent h-screen flex justify-center items-center">
+  <script type="module" src="scripts.js"></script>
+  <div class="bg-white p-10 rounded mx-100 w-full max-w-xs shadow-lg">
+    <div>
+      <label class="block text-gray-700 text-sm font-bold" for="time">
+        Work Timer
+      </label>
+      <input
+        class="shadow appearance-none border rounded w-full my-2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="work_timer" type="text" value="10">
+      <button id="start_button"
+        class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        type="button" onclick="startTimer(document.getElementById('work_timer').value)">
+        Start
+      </button>
+      <button id="pause-button"
+        class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline disabled:bg-green-300"
+        type="button" onclick="stopTimer()">
+        Pause
+      </button>
+    </div>
+    <div class="mt-2 ml-4">
+      <p id="timer" type="text">test</p>
+    </div>
+  </div>
+</body>
+
+</html>

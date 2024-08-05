@@ -1,5 +1,6 @@
 {
   "build": {
+    "withGlobalTauri": true,
     "beforeBuildCommand": "",
     "beforeDevCommand": "",
     "devPath": "./ui",
@@ -55,6 +56,7 @@
     "windows": [
       {
         "fullscreen": false,
+        "transparent": true,
         "height": 600,
         "resizable": true,
         "title": "Tomato Demo",
