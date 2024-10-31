@@ -1,62 +1,52 @@
 {
   "build": {
-    "withGlobalTauri": true,
+    "frontendDist": "./ui",
     "beforeBuildCommand": "",
-    "beforeDevCommand": "",
-    "devPath": "./ui",
-    "distDir": "./ui"
+    "beforeDevCommand": ""
   },
-  "package": {
-    "productName": "tomato-app",
-    "version": "0.1.0"
-  },
-  "tauri": {
-    "allowlist": {
-      "fs": {
-        "scope": ["$RESOURCE/*"]
-      }
+  "bundle": {
+    "active": true,
+    "category": "DeveloperTool",
+    "copyright": "",
+    "targets": "all",
+    "externalBin": [],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
     },
-    "bundle": {
-      "active": true,
-      "category": "DeveloperTool",
-      "copyright": "",
+    "longDescription": "",
+    "macOS": {
+      "entitlements": null,
+      "exceptionDomain": "",
+      "frameworks": [],
+      "providerShortName": null,
+      "signingIdentity": null
+    },
+    "resources": [
+      "resources/*"
+    ],
+    "shortDescription": "",
+    "linux": {
       "deb": {
         "depends": []
-      },
-      "externalBin": [],
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ],
-      "identifier": "com.tauri.dev",
-      "longDescription": "",
-      "macOS": {
-        "entitlements": null,
-        "exceptionDomain": "",
-        "frameworks": [],
-        "providerShortName": null,
-        "signingIdentity": null
-      },
-      "resources": [
-        "resources/*"
-      ],
-      "shortDescription": "",
-      "targets": "all",
-      "windows": {
-        "certificateThumbprint": null,
-        "digestAlgorithm": "sha256",
-        "timestampUrl": ""
       }
-    },
-    "security": {
-      "csp": null
-    },
-    "updater": {
-      "active": false
-    },
+    }
+  },
+  "productName": "tomato-app",
+  "mainBinaryName": "tomato-app",
+  "version": "0.1.0",
+  "identifier": "de.dms.tomatoapp",
+  "plugins": {},
+  "app": {
+    "withGlobalTauri": true,
     "windows": [
       {
         "fullscreen": false,
@@ -66,6 +56,9 @@
         "title": "Tomato Demo",
         "width": 800
       }
-    ]
+    ],
+    "security": {
+      "csp": null
+    }
   }
 }

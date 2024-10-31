@@ -1,5 +1,8 @@
 {
   "scripts": {
     "tauri": "tauri"
+  },
+  "dependencies": {
+    "lucide-react": "^0.453.0"
   }
 }
