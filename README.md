@@ -3,11 +3,16 @@
 ## Techstack
 Frameworks:
 Tauri <br>
+htmx <br>
 TailwindCSS <br>
 
 Languages:
 Rust <br>
 JavaScript <br>
+
+Frontend: 
+UI design based on shadcn
+added components: <rootdir>/ui/components/*
 
 ## Build
 
